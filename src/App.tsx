@@ -1,5 +1,6 @@
 import { Grid, GridItem, Show } from '@chakra-ui/react';
 import NavBar from './components/NavBar'
+import BookGrid from './components/BookGrid';
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         <Show above='lg'>
         <GridItem area={'asid'} >Asid</GridItem>
         </Show>
-        <GridItem area={'main'} >main</GridItem>
+        <GridItem area={'main'} >
+          <BookGrid />
+        </GridItem>
 
       </Grid>
     </div>
